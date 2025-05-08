@@ -1,0 +1,212 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styling */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0F4F84;
+    padding: 10px 20px;
+  }
+  
+  /* Logo styling */
+  .logo {
+    height: 100px;
+    width: auto;
+  }
+  
+  /* Navigation styling */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
+  .dropDown {
+    background-color: #074f84;
+    padding: 15px;
+    border-radius: 20px;
+    width: 250px;
+    min-width: 250px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  aside details {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #003f6b;
+    border-radius: 5px;
+    overflow: visible;
+    width: 100%;
+  }
+  
+  aside summary {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #003f6b;
+    border-radius: 5px;
+  }
+  
+  aside summary::after {
+    content: "▼";
+    font-size: 12px;
+    background: #222;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  
+  details[open] summary::after {
+    content: "▲";
+  }
+  
+  aside ul {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0;
+    list-style: disc;
+    background-color: #f1f1f1;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  aside ul li {
+    margin-bottom: 6px;
+  }
+  
+  summary:hover {
+    background-color: #555;
+  }
+  
+
+  .main-content {
+    display: flex;
+    align-items: flex-start; /* aligns items to the top */
+    gap: 30px; /* spacing between dropdown and welcome section */
+    margin: 40px;
+    flex: 1;
+  }
+  
+
+  /* Flex container that fills the whole viewport */
+    body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* full viewport height */
+  }
+  
+  /* Footer */
+  .site-footer {
+    background-color: #2c3e75;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+  }
+  
+
+  .about-us-section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .about-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #0F4F84;
+  }
+  
+  .about-description {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Student cards grid */
+  .student-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Individual card styling */
+  .student-card {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .student-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .student-card h3 {
+    font-size: 1.2rem;
+    color: #1d3557;
+    margin-bottom: 0.5rem;
+  }
+  
+  .student-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0.25rem 0;
+  }
+
+  .main-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 40px;
+  }
+
+  .about-box {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    }
+  
+  
+  
