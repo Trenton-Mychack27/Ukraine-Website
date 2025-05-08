@@ -11,7 +11,7 @@
   
   /* Header */
   header {
-    background-color: #2c3e75;
+    background-color: #0F4F84;
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -35,7 +35,7 @@
   }
 
   .dropDown {
-    background-color: #074f84;
+    background-color: #0F4F84;
     padding: 15px;
     border-radius: 20px;
     width: 250px;
@@ -48,7 +48,7 @@
   aside details {
     display: block;
     margin-bottom: 10px;
-    background-color: #003f6b;
+    background-color: #0F4F84;
     border-radius: 5px;
     overflow: visible;
     width: 100%;
@@ -107,13 +107,13 @@
   }
 
     /* Footer */
-    .site-footer {
-      background-color: #2c3e75;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: auto;
-    }
+  .site-footer {
+    background-color: #0F4F84;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+  }
 
     .toggle-label {
       color: white;
@@ -140,7 +140,7 @@
   .main-title {
     font-size: 2rem;
     color: white;
-    background-color: #2c3e75;
+    background-color: #0F4F84;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -148,7 +148,7 @@
   }
 
   .description-box {
-    background-color: #2c3e75;
+    background-color: #0F4F84;
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -156,7 +156,7 @@
     text-align: center;
   }
   .why-works {
-    background-color: #2c3e75;
+    background-color: #0F4F84;
     color: white;
     padding: 10px;
     margin-bottom: 20px;
@@ -173,7 +173,7 @@
     justify-content: center;
   }
   .instructions {
-    background-color: #2c3e75;
+    background-color: #0F4F84;
     color: white;
     padding: 15px;
     border-radius: 5px;

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home Page</title>
-    <link rel="stylesheet" href="indexstyles.css">
+    <link rel="stylesheet" href="contactstyles.css">
   </head>
   <body>
     <div class = "page-wrapper">
@@ -54,41 +54,25 @@
                 </details>
                 </aside>
             </div> 
-            <div class="card-grid-container">
-                <a href="pair-grounding.html" class="activity-card">
-                  <img src="pairgrounding.jpg" alt="Pair Grounding">
-                  <div class="label">Pair Grounding</div>
-                </a>
-                <a href="fidgeting.html" class="activity-card">
-                  <img src="fidgeting.png" alt="Fidgeting">
-                  <div class="label">Fidgeting</div>
-                </a>
-                <a href="affirmation.html" class="activity-card">
-                  <img src="affirmations.jpg" alt="Affirmation">
-                  <div class="label">Affirmation</div>
-                </a>
-                <a href="safe-space-breathing.html" class="activity-card">
-                  <img src="ssbreathing.gif" alt="Safe Space Breathing">
-                  <div class="label">Safe Space Breathing</div>
-                </a>
-                <a href="draw-safe-place.html" class="activity-card">
-                  <img src="ssdrawing.webp" alt="Draw a Safe Place">
-                  <div class="label">Draw a Safe Place</div>
-                </a>
-                <a href="feeling-scale.html" class="activity-card">
-                  <img src="feelingScale.gif" alt="Feeling Scale">
-                  <div class="label">Feeling Scale</div>
-                </a>
-                <a href="body-scan.html" class="activity-card">
-                  <img src="bodyScan.jpg" alt="Body Scan Meditation">
-                  <div class="label">Body Scan Meditation</div>
-                </a>
-                <a href="high-five-breathing.html" class="activity-card">
-                  <img src="highFive.webp" alt="High-Five Breathing">
-                  <div class="label">High-Five Breathing</div>
-                </a>
-              </div>
-        </div>
+            <div class = "contact-form">
+                <h2>Contact Us</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class = "map">
+                <h2>Our Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.1234567890123!2d-73.7562314846814!3d42.7199292797598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de0f8c8c8c8c8c%3A0x8c8c8c8c8c8c8c8c!2sSiena%20College!5e0!3m2!1sen!2sus!4v1616161616161" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
     </main>
         
     <footer class = "site-footer">
