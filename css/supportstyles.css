@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -24,6 +30,9 @@ body {
     list-style: none;
     display: flex;
     gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
   
   nav ul li a {
@@ -36,41 +45,6 @@ body {
     background-color: #555;
     border-radius: 4px;
   }
-
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 34px;
-    height: 18px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: #ccc;
-    border-radius: 18px;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 14px;
-    width: 14px;
-    left: 2px;
-    bottom: 2px;
-    background-color: white;
-    border-radius: 50%;
-    transition: .4s;
-}
 
 input:checked + .slider {
     background-color: #0F4F84;
@@ -144,3 +118,77 @@ h1 {
     font-size: 16px;
     color: white;
   }
+
+  /* ===== Language Toggle Switch ===== */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;   /* wide enough for text */
+  height: 34px;
+  margin-left: 15px;
+}
+
+/* Hide the checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider background */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+/* ENG/UKR labels */
+.slider .label {
+  position: relative;
+  z-index: 3;          /* keep labels above the knob */
+  width: 50%;          /* left = ENG, right = УКР */
+  text-align: center;
+  pointer-events: none;
+}
+
+/* Blue knob */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 36px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #0F4F84;
+  transition: .4s;
+  border-radius: 34px;
+  z-index: 2; /* knob under labels */
+}
+
+/* Move knob to right when checked */
+input:checked + .slider:before {
+  transform: translateX(40px);
+}
+
+/* Wrapper to keep ENG (slider) УКР in a line */
+.lang-toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between text and slider */
+}
+
+/* Labels next to the slider */
+.lang-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}

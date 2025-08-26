@@ -3,54 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pair Grounding</title>
-  <link rel="stylesheet" href="pairgroundstyles.css" />
+  <title>Draw a Safe Place</title>
+  <link rel="stylesheet" href="/css/techniques.css" />
 </head>
 <body>
   <div class="page-wrapper">
     <header>
         <a href="index.html">
-            <img src="logo.png" alt="School Logo" class="logo">
+            <img src="/images/logo.png" alt="School Logo" class="logo">
           </a>
       <nav>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="support.html">Support Line</a></li>
-          <li><label class="toggle-label"><input type="checkbox" /> ENG/UKR</label></li>
-        </ul>
-      </nav>
-    </header>
+          <li><a href="/index.html">Головна</a></li>
+              <li><a href="/contact.html">Контакти</a></li>
+              <li><a href="/about.html">Про нас</a></li>
+              <li><a href="/support.html">Лінія підтримки</a></li>
+              <li class="lang-toggle-wrapper">
+                <span class="lang-label">ENG</span>
+                <label class="switch">
+                  <input type="checkbox" id="langToggle">
+                  <span class="slider round"></span>
+                </label>
+                <span class="lang-label">УКР</span>
+              </li>
+        </li>
+    </ul>
+</nav>
+</header>
 
     <main class>
         <div class = "main-content">
         <div class="dropDown">
-            <aside>
+          <aside>
             <details open>
-                <summary>General Teaching</summary>
-                <ul>
-                    <li><a href="affirmations.html" id="affirmations">Affirmations</a></li>
-                    <li><a href="FeelingScale.html" id="feeling-scale">Feeling Scale</a></li>
-                    <li><a href="draw-safe-place.html" id="draw-safe-place">Draw a Safe Place</a></li>
-                    <li><a href="BodyScan.html" id="body-scan">Body Scan Meditation</a></li>
-                </ul>
+              <summary>Загальні методи навчання</summary>
+              <ul>
+                <li><a href="/techniques/FeelingScale.html" id="feeling-scale">Шкала почуттів</a></li>
+                <li><a href="/techniques/draw-safe-place.html" id="draw-safe-place">Намалюй безпечне місце</a></li>
+                <li><a href="/techniques/BodyScan.html" id="body-scan">Сканування тіла (медитація)</a></li>
+                <li><a href="/techniques/squeezeRelease.html" id="squeezeRelease">Стискання і розслаблення</a></li>
+                <li><a href="/techniques/visualImagery.html" id="visualImagery">Візуальні образи</a></li>
+                <li><a href="/techniques/pair-grounding.html" id="pairGrounding">Заземлення в парах</a></li>
+              </ul>
             </details>
+          
             <details>
-                <summary>Immediate Relief</summary>
-                <ul>
-                <li>Relief 1</li>
-                <li>Relief 2</li>
-                </ul>
+              <summary>Негайне полегшення</summary>
+              <ul>
+                <li><a href="/techniques/safeSpaceBreathing.html" id="safeSpaceBreathing">Дихання «Безпечний простір»</a></li>
+                <li><a href="/techniques/highFive.html" id="highFive">Дихання «П’ять пальців»</a></li>
+                <li><a href="/techniques/grounding54321.html" id="grounding54321">Заземлення 5-4-3-2-1</a></li>
+              </ul>
             </details>
+          
             <details>
-                <summary>Healthy Habits</summary>
-                <ul>
-                <li>Habit 1</li>
-                <li>Habit 2</li>
-                </ul>
+              <summary>Корисні звички</summary>
+              <ul>
+                <li><a href="/techniques/walking.html" id="walking">Прогулянка</a></li>
+                <li><a href="/techniques/fidgeting.html" id="fidgeting">Фіджетинг</a></li>
+                <li><a href="/techniques/affirmations.html" id="affirmations">Афірмації</a></li>
+              </ul>
             </details>
-            </aside>
+          </aside>
         </div> 
 
       <section class="content">
@@ -114,10 +128,10 @@
         </div>
 
         <div class="related-activities">
-          <a href="#"><img src="ssdrawing.webp" alt="Draw a Safe Place"/><p>Draw a Safe Place</p></a>
-          <a href="#"><img src="feelingScale.gif" alt="Images to Feelings"/><p>Images to Feelings</p></a>
-          <a href="#"><img src="bodyScan.jpg" alt="Body Scan"/><p>Body Scan Meditation</p></a>
-          <a href="#"><img src="highFive.webp" alt="High-Five"/><p>High-Five Breathing</p></a>
+          <a href="/techniques/draw-safe-place.html" id="draw-safe-place"><img src="/images/ssdrawing.webp" alt="Draw a Safe Place"/><p>Draw a Safe Place</p></a>
+          <a href="/techniques/FeelingScale.html"><img src="/images/feelingScale.gif" alt="Images to Feelings"/><p>Feeling Scale</p></a>
+          <a href="/techniques/BodyScan.html"><img src="/images/bodyScan.jpg" alt="Body Scan"/><p>Body Scan Meditation</p></a>
+          <a href="/techniques/highFive.html"><img src="/images/highFive.webp" alt="High-Five"/><p>High-Five Breathing</p></a>
         </div>
       </section>
       </div>
@@ -128,5 +142,6 @@
       <p>Privacy Policy | Terms of Service</p>
   </footer>
   </div>
+  <script src="/js/language-toggle.js"></script>
 </body>
 </html>
